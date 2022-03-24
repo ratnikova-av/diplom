@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    --top-bar-height: 64px;
+    --nav-bar-width: 300px;
+    --now-playing-bar-height: 64px;
+    --fonts: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Root__top-bar {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: baseline;
+    background-color: rgb(76, 165, 103);
+    height: var(--top-bar-height);
+    width: calc(100% - var(--nav-bar-width));
+}
+
+.Root__nav-bar {
+    float: left;
+    background-color: black;
+    height: calc(100% - var(--now-playing-bar-height));
+    width: var(--nav-bar-width);
+
+}
+
+.Root__main-view {
+    float: right;
+    background-color: dimgray;
+    height: calc(100vh - var(--now-playing-bar-height) - var(--top-bar-height));
+    width: calc(100% - var(--nav-bar-width));
+    overflow-y: auto;
+
+}
+
+.Root__now-playing-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: gray;
+    height: var(--now-playing-bar-height);
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.graficlogo {
+    padding: 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-bar-list {
+    padding-top: 25px;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-button-text { 
+    font-family: var(--fonts);
+    color: whitesmoke;
+    margin-left: 8px;
+}
+
+.top-bar-acc {
+    background-color: dimgray;
+    border-radius: 20px;
+    border-color: beige;
+    border-style: solid;
+    height: 35px;
+    width: 100px;
+    margin-right: 20px;
+    color: beige;
+    font-family: var(--fonts);
+
+}
+
+.top-bar-acc:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+.top-bar-acc:active {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.main-view-element {
+    color: beige;
+    padding: 20px;
+
+}
+
+.card {
+    width: 180px;
+    height: 210px;
+    margin: 8px;
+    background-color: rgb(20, 22, 21);
+    border-radius: 5px;    
+    flex-wrap: wrap;
+    display: inline-block;
+}
+ 
+
+
+    
